@@ -8,3 +8,29 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+
+/* Utility classes */
+
+.mt-10 {
+  margin-top: 6rem;
+}
+
+.mb-10 {
+  margin-bottom: 7rem;
+}
+
+
+/* home */
+
+.home-pricing-card {
+  display: flex;
+  gap: 0;
+  align-items: end;
+}
+
+.home-pricing-card p{
+  opacity: 0.7;
+  text-wrap-mode: nowrap;
+  transform: translate(-60%, 0);
+}
