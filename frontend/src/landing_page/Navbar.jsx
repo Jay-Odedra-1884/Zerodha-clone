@@ -1,11 +1,60 @@
-import React from 'react'
+import React from "react";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
-    <div>
-      Navbar
-    </div>
-  )
+    <nav class="navbar navbar-expand-lg bg-body-tertiary p-3">
+      <div class="container">
+        <Link className="navbar-brand" to={"/"}>
+          <img
+            src="public/media/images/logo.svg"
+            alt="ZERODHA"
+            style={{ width: "20%" }}
+          />
+        </Link>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav fs-7 fw-semibold text-muted gap-4 ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <Link className="nav-link" to={"/signup"}>
+                Signup
+              </Link>
+            </li>
+            <li class="nav-item">
+              <Link className="nav-link" to={"/about"}>
+                About
+              </Link>
+            </li>
+            <li class="nav-item">
+              <Link className="nav-link" to={"/products"}>
+                Products
+              </Link>
+            </li>
+            <li class="nav-item">
+              <Link className="nav-link" to={"/pricing"}>
+                Pricing
+              </Link>
+            </li>
+            <li class="nav-item">
+              <Link className="nav-link" to={"/support"}>
+                Support
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  );
 }
 
-export default Navbar
+export default Navbar;
