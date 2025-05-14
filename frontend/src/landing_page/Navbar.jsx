@@ -1,10 +1,9 @@
-import React from "react";
 import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
-    <nav class="navbar navbar-expand-lg bg-body-tertiary p-3">
-      <div class="container">
+    <nav className="navbar navbar-expand-lg bg-body-tertiary p-3">
+      <div className="container">
         <Link className="navbar-brand" to={"/"}>
           <img
             src="public/media/images/logo.svg"
@@ -13,7 +12,7 @@ function Navbar() {
           />
         </Link>
         <button
-          class="navbar-toggler"
+          className="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
@@ -21,31 +20,31 @@ function Navbar() {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav fs-7 fw-semibold text-muted gap-4 ms-auto mb-2 mb-lg-0">
-            <li class="nav-item">
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul className="navbar-nav fs-7 fw-semibold text-muted gap-4 ms-auto mb-2 mb-lg-0">
+            <li className="nav-item">
               <Link className="nav-link" to={"/signup"}>
                 Signup
               </Link>
             </li>
-            <li class="nav-item">
+            <li className="nav-item">
               <Link className="nav-link" to={"/about"}>
                 About
               </Link>
             </li>
-            <li class="nav-item">
+            <li className="nav-item">
               <Link className="nav-link" to={"/products"}>
                 Products
               </Link>
             </li>
-            <li class="nav-item">
+            <li className="nav-item">
               <Link className="nav-link" to={"/pricing"}>
                 Pricing
               </Link>
             </li>
-            <li class="nav-item">
+            <li className="nav-item">
               <Link className="nav-link" to={"/support"}>
                 Support
               </Link>
