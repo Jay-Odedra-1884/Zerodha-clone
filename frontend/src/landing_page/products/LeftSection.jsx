@@ -12,7 +12,7 @@ function LeftSection({
   linkTitle,
 }) {
   return (
-    <div className="container mt-5">
+    <div className="container mb-15">
       <div className="row">
         <div className="col-6">
           <img src={imageUrl} alt="Kite" />

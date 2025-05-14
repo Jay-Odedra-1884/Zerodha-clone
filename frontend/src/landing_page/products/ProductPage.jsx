@@ -7,6 +7,9 @@ function ProductPage() {
   return (
     <>
     <Hero />
+    <br />
+    <br />
+    <br />
     <LeftSection 
     imageUrl="public/media/images/kite.png"
     title="Kite"
@@ -20,7 +23,7 @@ function ProductPage() {
     imageUrl="public/media/images/console.png"
     title="Console"
     description="The central dashboard for your Zerodha account. Gain insights into your trades and investments with in-depth reports and visualisations."
-    learnMoreLink=""
+    learnMoreLink="#"
     />
     <LeftSection 
     imageUrl="public/media/images/coin.png"
@@ -32,12 +35,22 @@ function ProductPage() {
     linkTitle="Coin"
     />
     <RightSection
-    imageUrl="public/media/images/console.png"
-    title="Console"
-    description="The central dashboard for your Zerodha account. Gain insights into your trades and investments with in-depth reports and visualisations."
-    learnMoreLink=""
+    imageUrl="public/media/images/kiteconnect.png"
+    title="Kite Connect API"
+    description="Build powerful trading platforms and experiences with our super simple HTTP/JSON APIs. If you are a startup, build your investment app and showcase it to our clientbase."
+    link="#"
+    linkTitle="Kite Connect"
+    />
+    <LeftSection 
+    imageUrl="public/media/images/varsity.png"
+    title="Coin"
+    description="Buy direct mutual funds online, commission-free, delivered directly to your Demat account. Enjoy the investment experience on your Android and iOS devices."
+    playStoreLink=""
+    appStoreLink=""
+    
     />
     </>
+    
   )
 }
 
